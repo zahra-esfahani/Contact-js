@@ -1,53 +1,164 @@
-body{
-    max-width: 1200px;
-    margin: auto;
-    background-color: rgba(115, 163, 115, 0.421);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgba(115, 163, 115, 0.421);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-.parent{
-    width: 50%;
-    height: 80vh;
-    background-color: rgba(255, 255, 255, 0.891);
-    border-radius: 10px;
-    font-family: Karla-Bold;
+.parent {
+  width: 50%;
+
+  background-color: rgba(255, 255, 255, 0.891);
+  border-radius: 10px;
+  font-family: Karla-VariableFont;
 }
-.lable{
+.parent h2 {
+  margin-left: 20px;
+  margin-top: 30px;
+  font-family: Karla-Bold;
+}
+.lable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+:focus {
+  outline: none;
+  box-shadow: none;
+}
+.lable label {
+  margin-top: 20px;
+  width: 50%;
+ 
+}
+.lable p{
+    margin-left: 23px;
+}
+.lable input {
+    width: 74%;
+  height: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(115, 163, 115);
+  padding: 10px;
+  margin-left: 23px;
+}
+
+.email {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.email div {
+  width: 90%;
+  margin: auto;
+}
+.email p {
+  margin-bottom: 10px;
+}
+.email input {
+  width: 96%;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(115, 163, 115);
+  padding: 10px;
+}
+.radio-parent{
+    margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
 }
-:focus{
-    outline: none;
-    box-shadow: none;
-}
-.lable div{
-    margin-top: 20px;
-}
-.lable input{
-    width: 250px;
-    height: 40px;
-    margin-top: 10px;
+.radio-input{
+    width: 38%;
+    height: 25px;
+    margin-top: 0px;
     border-radius: 10px;
     border: 2px solid rgb(115, 163, 115);
+    padding: 10px;
+    background-color: white;
 }
-.email{
+.radio-input input{
+    margin-left: 10px;
+    width: 40px;
+    margin-top: 5px;
+}
+.query p{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.message label{
+    width: 90%;
+}
+.message input{
+    margin-top: 10px;
+    height: 100px;
+}
+.conset{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.button{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-bottom: 30px;
 }
-.email p{
-    margin-bottom: 10px;
-}
-.email input{
-    width: 530px;
+.button button{
+    width: 90%;
     height: 40px;
     border-radius: 10px;
     border: 2px solid rgb(115, 163, 115);
-    margin: auto;
+    padding: 10px;
+    background-color:rgb(146, 196, 146) ;
+    margin-top: 20px;
+    cursor: pointer;
 }
+.name input{
+    width: 100%;
+    margin-left: -10px;
+    padding: 10px;
+    margin-top: -10px;
+    margin-right: 10px;
+}
+.name div{
+    border: none;
+}
+.p-name{
+    display: flex;
+    width: 100%;
+}
+
+
+
+@media (max-width: 800px) {
+    .lable label {
+        width: 100%;
+       
+      }
+      .email div{
+        width: 90%;
+      }
+      .email input{
+        width: 90%;
+      }
+      .radio-input{
+        width: 80%;
+        margin-top: 20px;
+      }
+      .radio-parent{
+        margin-top: 0px;
+      }
+ input{
+    width: 100%;
+ }
+  }

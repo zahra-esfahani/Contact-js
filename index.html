@@ -11,13 +11,59 @@
     <div class="parent">
       <h2>Contact Us</h2>
       <div class="lable">
-      <div><p>Name *</p><input type="text"></div>
-      <div><p>Last Name *</p><input type="text"></div>
+<!--        
+         <label for="">
+          <p>Name *</p>
+          <input type="text" />
+         </label>
+        
+        
+         <label for="">
+          <p>Last Name *</p>
+          <input type="text" />
+         </label> -->
+         <div class="radio-parent name">
+          <div class="radio-input">
+            
+            <input type="text"  />
+          </div>
+          <div class="radio-input ">
+           
+            <input type="text"  />
+          </div>
+        </div>
+        
       </div>
       <div class="email">
-        <div ><p>Email Address *</p><input type="text"></div>
+        <div>
+          <p>Email Address *</p>
+          <input type="text" />
+        </div>
       </div>
-      
+      <div class="query">
+        <p>Query Type *</p>
+        <div class="radio-parent">
+          <div class="radio-input">
+            <input type="radio" name="radio" value="General" /><label for=""
+              >General Enquiry</label
+            >
+          </div>
+          <div class="radio-input">
+            <input type="radio" name="radio" value="Support" /><label for=""
+              >Support Request</label >
+          </div>
+        </div>
+      </div>
+      <div class="email message">
+        <label for="">
+          Message *
+          <input type="text">
+        </label>
+      </div>
+      <div class="conset">
+        <input type="radio"> <label for=""> I conset to being contacted by the team</label>
+      </div>
+      <div class="button"><button>Submit</button></div>
     </div>
   </body>
 </html>
