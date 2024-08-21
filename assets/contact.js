@@ -42,6 +42,7 @@ const start = () => {
   let isValid = true;
 
   Inputs.forEach((item) => {
+    
     const filter = item.dataset.filter;
 
     if (filter === "name" || filter === "last name") {
@@ -98,8 +99,18 @@ const start = () => {
   }
 };
 
+const onpaste=()=>{
+  Inputs.forEach((item)=>{
+    item.onpaste = e => e.preventDefault();
+  })
+}
+
+
 Button.addEventListener("click", (e) => {
   e.preventDefault();
   start();
 });
+
+window.addEventListener("DOMContentLoaded" , onpaste)
+
 
